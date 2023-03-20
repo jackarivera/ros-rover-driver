@@ -27,7 +27,10 @@
 	- We want our robots to be used for both research and education. It is important that we can provide accurate, up-to-date, and easy to follow documentation to help our users get started and understand the different aspects of ROS and our robots.
 9) New Install Script **(Priority - H, In Progress)**
 	- Our current script, to put it bluntly, is lackluster. The new script will be much easier to work with and easier to debug IF NEEDED.
-	
+
+## Completed Features:
+Once projects leave the roadmap, they will be placed here. This is mainly for me to stay organized but it also allows you to see what is currently done. If any bugs make it through to here please post an issue and I will try to stay on top of them.
+
 ## Installation instructions - Outdated (Do Not Follow)
 
 1. Cloning this repository into your workspace
