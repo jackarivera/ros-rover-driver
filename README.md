@@ -5,20 +5,25 @@
 - This driver is very much so in the development and beta stages. Please report any issues that you face so we can create a stable release.
 
 ## Roadmap / To-Implement:
-1) Restructuring of Launch files
+*Note these are in no particular order. Please look at the priority/in-progress tags on each to see if they are being worked on. H = High, M = Medium, L = Low*
+
+1) Restructuring of Launch files **(Priority - H, In Progress)**
 	- Our goal is to make it more organized and easier to launch various packages
-2) Out of the box SLAM and Nav2
+2) Out of the box SLAM and Nav2 **(Priority - M, In Progress)**
 	- With autonomous robotics growing in popularity we feel it is important to be able to provide a out-of-the-box solution so our customers can open the box and have SLAM and Nav2 running in no time
-3) Foxglove implementation ([Foxglove](https://foxglove.dev/))
+3) Foxglove implementation ([Foxglove](https://foxglove.dev/)) **(Priority H, In Progress)**
 	- We have found foxglove to be a very useful tool while developing. In order to provide this out-of-the-box to our customers we will be implementing an automated launch (if chosen on install) of foxglove_bridge so you can easily connect and visualize your robot data.
-4) Better diagnostics
+4) Better diagnostics **(Priority - M)**
 	- When I came onto rover, it was very hard for me to diagnose issues with the robots.
 	- My goal is to provide thorough diagnostics that make it easy to tackle any problem that arises.
-5) New controller driver
+5) New controller driver **(Priority - M)**
 	- Our current controller driver presents some issues when running over can causing jittering. A new controller driver / fixed driver is in the works.
-6) URDF Meshes and Simulation Support
+6) URDF Meshes and Simulation Support **(Priority - L)**
 	- Simulation is an important part of robotics prototyping and we aim to provide the tools necessary to get up and running quicker and easier
-7) Updated documentation and tutorials
+	
+7) AprilTag/Fiducial Tracking **(Priority - L)** and Camera support **(Priority - M)**
+	- We currently offer several cameras for sale with our robots, thus we should also offer turnkey solutions for these devices. I'm aiming to add camera driver support out-of-box as well as the ability to track apriltags/fiducials as the user needs.
+8) Updated documentation and tutorials **(Priority - H, In Progress)**
 	- We want our robots to be used for both research and education. It is important that we can provide accurate, up-to-date, and easy to follow documentation to help our users get started and understand the different aspects of ROS and our robots.
 
 ## Installation instructions - Outdated (Do Not Follow)
