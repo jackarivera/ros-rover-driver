@@ -25,7 +25,7 @@
 	- We currently offer several cameras for sale with our robots, thus we should also offer turnkey solutions for these devices. I'm aiming to add camera driver support out-of-box as well as the ability to track apriltags/fiducials as the user needs.
 8) Updated documentation and tutorials **(Priority - H, In Progress)**
 	- We want our robots to be used for both research and education. It is important that we can provide accurate, up-to-date, and easy to follow documentation to help our users get started and understand the different aspects of ROS and our robots.
-9) New Install Script **(Priority - H, In Progress)**
+9) New Install Script **(Priority - H, In Progress)** [Rover Installer](https://github.com/jackarivera/rover_install)
 	- Our current script, to put it bluntly, is lackluster. The new script will be much easier to work with and easier to debug IF NEEDED.
 
 ## Completed Features:
