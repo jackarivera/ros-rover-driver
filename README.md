@@ -28,6 +28,10 @@
 9) New Install Script **(Priority - H, In Progress)** ([Rover Installer](https://github.com/jackarivera/rover_install))
 	- Our current script, to put it bluntly, is lackluster. The new script will be much easier to work with and easier to debug IF NEEDED.
 
+## Planned fixes for Issues:
+1) Communication Issues on Zero3
+	- Zero3 communication seems to have issues with the ros2 driver. Unfortunately until about may I won't really be able to work on this as I don't have access to a zero3 currently. I will work on fixing this in this new driver as soon as may comes.
+
 ## Completed Features:
 Once projects leave the roadmap, they will be placed here. This is mainly for me to stay organized but it also allows you to see what is currently done. If any bugs make it through to here please post an issue and I will try to stay on top of them.
 
