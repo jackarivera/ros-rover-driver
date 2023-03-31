@@ -1,6 +1,7 @@
 # ROS2 Driver for Rover Robots
 ## About:
-- This package is exclusively built for ROS2. It is being tested on Ubuntu 22.04 and ROS2-Humble.
+- This package is being designed to run on our new carrier board but will maintain functionality with all previous robots that do not have a carrier board.
+- This package is exclusively built for ROS2. It is being tested on Ubuntu 20.04 (Docker?) & 22.04 with ROS2-Humble.
 - This is built on top of the old roverrobotics_ros2 driver. It is designed specifically to fix many reoccuring bugs that we faced with the old driver.
 - This driver is very much so in the development and beta stages. Please report any issues that you face so we can create a stable release.
 
