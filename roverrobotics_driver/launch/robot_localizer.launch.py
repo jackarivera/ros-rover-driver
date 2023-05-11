@@ -15,21 +15,12 @@ from math import pi
 def generate_launch_description():
     ld = LaunchDescription()
 
-    # IMU Node
-    config_path = Path(get_package_share_directory("roverrobotics_driver"), "config",
-                          "bno_conf.yaml")
-
-    imu_node = Node(
-        package='bno055_driver', 
-        executable='bno055_driver', 
-        parameters=[config_path]
-        )
-        
-    ld.add_action(imu_node)
+    # Realsense Node
+    
 
     # Start robot localization using an Extended Kalman filter
     robot_localization_file_path = Path(get_package_share_directory(
-        'roverrobotics_driver'), 'config/ekf.yaml')
+        'roverrobotics_driver'), 'config/localization_ekf.yaml')
     
     localization_node = Node(
     	package='robot_localization',
@@ -101,12 +92,6 @@ def generate_launch_description():
     ld.add_action(lidar_node)
     
     # Static Transforms
-    map_tf = Node(
-            package="tf2_ros",
-            executable="static_transform_publisher",
-            output='screen',
-            arguments=['0.0', '0', '0.0', '0', '0', '0', 'map', 'odom'],
-        )
     imu_tf = Node(
             package="tf2_ros",
             executable="static_transform_publisher",
@@ -118,7 +103,7 @@ def generate_launch_description():
             package="tf2_ros",
             executable="static_transform_publisher",
             output='screen',
-            arguments=['0.1524', '0', '0.2413', str(pi), '0', '0', 'base_link', 'laser'],
+            arguments=['0.15875', '0', '0.37465', str(pi), '0', '0', 'base_link', 'laser'],
         )
         
         
