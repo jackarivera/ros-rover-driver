@@ -10,7 +10,7 @@ from math import pi
 def generate_launch_description():
 
     return LaunchDescription([
-        SetEnvironmentVariable('RCUTILS_CONSOLE_STDOUT_LINE_BUFFERED', '1'),
+        SetEnvironmentVariable('RCUTILS_LOGGING_BUFFERED_STREAM', '1'),
         IncludeLaunchDescription(PythonLaunchDescriptionSource(
             [ThisLaunchFileDir(), '/mini.launch.py'])),
         IncludeLaunchDescription(PythonLaunchDescriptionSource(

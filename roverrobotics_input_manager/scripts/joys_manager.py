@@ -16,8 +16,8 @@ class Mapper(Node):
         self._publish_topics = []
 
         self._joy_subscriber = self.create_subscription(Joy, joy_topic, self._joy_callback, 10)
-        controller = self.declare_parameter("controller").value
-        topics = self.declare_parameter("topics").value
+        controller = self.declare_parameter("controller", "default_null").value
+        topics = self.declare_parameter("topics", "default_null").value
         self._controller = self._configure_controller_mapping(open_yaml(controller)) if controller else None
         self._topics = self._register_topics(open_yaml(topics)) if topics else None
 
